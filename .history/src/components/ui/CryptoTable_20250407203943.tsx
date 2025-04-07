@@ -11,9 +11,66 @@ import {
 const CryptoTable: React.FC = () => {
   return (
     <div className="container mx-auto overflow-x-auto px-4">
+      {/* Filters and Categories */}
+      <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
+        <div className="flex flex-wrap gap-2">
+          <button className="rounded-md bg-blue-600 px-3 py-1 text-white">All Crypto</button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            NFTs
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Categories
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Token unlocks
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Rehypo
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Binance Alpha
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Memes
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            SOL
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            DOT
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            BNB
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            USA
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            AI
+          </button>
+        </div>
+        <div className="ml-auto flex gap-2">
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Top
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Trending
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            New
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Gainers
+          </button>
+          <button className="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+            Most Visited
+          </button>
+        </div>
+      </div>
+
       <table className="min-w-full bg-white dark:bg-gray-800">
         <thead>
-          <tr className="border-b border-gray-200 text-xs text-gray-500 dark:border-gray-700 dark:text-white">
+          <tr className="border-b border-gray-200 text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <th className="px-4 py-3 text-left">#</th>
             <th className="px-4 py-3 text-left">Name</th>
             <th className="px-4 py-3 text-right">Price</th>

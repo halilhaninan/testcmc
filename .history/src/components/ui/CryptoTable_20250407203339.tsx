@@ -13,7 +13,7 @@ const CryptoTable: React.FC = () => {
     <div className="container mx-auto overflow-x-auto px-4">
       <table className="min-w-full bg-white dark:bg-gray-800">
         <thead>
-          <tr className="border-b border-gray-200 text-xs text-gray-500 dark:border-gray-700 dark:text-white">
+          <tr className="border-b border-gray-200 text-xs text-gray-500 dark:border-gray-700 dark:text-gray-400">
             <th className="px-4 py-3 text-left">#</th>
             <th className="px-4 py-3 text-left">Name</th>
             <th className="px-4 py-3 text-right">Price</th>

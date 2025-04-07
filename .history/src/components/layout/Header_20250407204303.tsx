@@ -8,18 +8,18 @@ const Header: React.FC = () => {
   return (
     <header className="w-full border-b border-gray-200 bg-white shadow-sm transition-colors duration-200 dark:bg-gray-800">
       {/* Top Bar with Stats */}
-      <div className="hidden border-b border-gray-100 px-4 py-1 text-xs text-gray-500 dark:border-gray-700 dark:text-white md:block">
+      <div className="hidden border-b border-gray-100 px-4 py-1 text-xs text-gray-500 md:block">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex space-x-6">
             <div>
-              Cryptos: <span className="text-blue-600 dark:text-blue-400">12.93M</span>
+              Cryptos: <span className="text-blue-600">12.93M</span>
             </div>
             <div>
-              Exchanges: <span className="text-blue-600 dark:text-blue-400">812</span>
+              Exchanges: <span className="text-blue-600">812</span>
             </div>
             <div>
               Market Cap:{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-blue-600">
                 ${(globalStats.totalMarketCap / 1e12).toFixed(2)}T
               </span>
               <span
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
             </div>
             <div>
               24h Vol:{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-blue-600">
                 ${(globalStats.total24hVolume / 1e9).toFixed(2)}B
               </span>
               <span
@@ -43,12 +43,12 @@ const Header: React.FC = () => {
             </div>
             <div>
               Dominance:{" "}
-              <span className="text-blue-600 dark:text-blue-400">
+              <span className="text-blue-600">
                 BTC: {globalStats.btcDominance}% ETH: {globalStats.ethDominance}%
               </span>
             </div>
             <div>
-              ETH Gas: <span className="text-blue-600 dark:text-blue-400">0.47 Gwei</span>
+              ETH Gas: <span className="text-blue-600">0.47 Gwei</span>
             </div>
             <div>
               Fear & Greed:
@@ -56,12 +56,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
-              Get listed
-            </button>
-            <button className="transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
-              API
-            </button>
+            <button className="transition-colors hover:text-blue-600">Get listed</button>
+            <button className="transition-colors hover:text-blue-600">API</button>
           </div>
         </div>
       </div>
@@ -87,32 +83,30 @@ const Header: React.FC = () => {
                     strokeLinejoin="round"
                   ></path>
                 </svg>
-                <span className="ml-2 text-xl font-bold text-gray-800 dark:text-white">
-                  CoinMarketCap
-                </span>
+                <span className="ml-2 text-xl font-bold text-gray-800">CoinMarketCap</span>
               </a>
             </div>
 
             {/* Main Navigation Items */}
             <nav className="hidden space-x-6 lg:flex">
               <div className="group relative cursor-pointer">
-                <span className="font-medium text-gray-900 dark:text-white">Cryptocurrencies</span>
+                <span className="font-medium">Cryptocurrencies</span>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-200 group-hover:w-full"></div>
               </div>
               <div className="group relative cursor-pointer">
-                <span className="text-gray-900 dark:text-white">Exchanges</span>
+                <span>Exchanges</span>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-200 group-hover:w-full"></div>
               </div>
               <div className="group relative cursor-pointer">
-                <span className="text-gray-900 dark:text-white">Community</span>
+                <span>Community</span>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-200 group-hover:w-full"></div>
               </div>
               <div className="group relative cursor-pointer">
-                <span className="text-gray-900 dark:text-white">Products</span>
+                <span>Products</span>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-200 group-hover:w-full"></div>
               </div>
               <div className="group relative cursor-pointer">
-                <span className="text-gray-900 dark:text-white">Learn</span>
+                <span>Learn</span>
                 <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 transition-all duration-200 group-hover:w-full"></div>
               </div>
             </nav>
